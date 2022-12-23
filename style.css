@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 2%;
+    background-color: #777;
+    border: 1px solid #afafaf;
+    max-width: 50%;
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.toDo-title {
+    text-align: center; 
+    margin-top: 1rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+#createTask-btn {
+    position: relative;
+    right: 2.5rem;
+    width: 7%;
+    font-size: 1rem;
+    border: 1px solid #afafaf;
+}
+
+#createTask-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 1px;
+}
+
+.title {
+    margin: 0 0 1rem;
+}
+
+.tarefa {
+    resize: none;
+    height: 4rem;
+}
+
+#inserir-task {
+    width: 30%;
+    margin: 1rem auto;
+}
+
+.assinatura {
+    color: #fff;
+    font-size: .7rem;
+    margin-top: 1rem;
+}
+
+/* create task styles */
+.result-content {
+    overflow-y: auto;
+    margin-bottom: 1rem;
+}
+
+.new-task {
+    padding: .5rem;
+    overflow-x: hidden;
+}
+
+.task-title {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.task-text {
+    font-size: 1rem;
+    text-align: justify;
+    color: #c1c1c1;
+}
+
+.task-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: .5rem auto .3rem;
+}
+
+.has-done .card-header,
+.has-done .card-text{
+    text-decoration: line-through;
+}

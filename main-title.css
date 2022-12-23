@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.toDo-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3em;
+    color: #fff;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+    background-size: 100% 10px;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    transition: background-size .7s, background-position .5s ease-in-out;
+}
+
+.toDo-title:hover {
+    background-size: 100% 100%;
+    background-position: 0% 100%;
+    transition: background-position .7s, background-size .5s ease-in-out;
+    user-select: none;
+}
